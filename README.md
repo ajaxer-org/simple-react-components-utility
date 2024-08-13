@@ -2,14 +2,16 @@
 
 ---
 
-### useLocalStorage
+### SafeAnchor
 ```javascript
-<Anchor
+import { SafeAnchor } from 'simple-react-components-utility'
+
+<SafeAnchor
     href='https://ajaxer.org/'
     title='ajaxer.org'
     underline={true}
     className="text-lg">
     Click me
-    </Anchor>
+    </SafeAnchor>
 ```
 
