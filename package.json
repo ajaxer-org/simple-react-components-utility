@@ -1,6 +1,6 @@
 {
   "name": "simple-react-components-utility",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utility of simple REACT reusable components",
   "main": "index.js",
   "scripts": {
