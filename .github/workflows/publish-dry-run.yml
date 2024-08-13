@@ -1,0 +1,37 @@
+name: Publish to npm --dry-run
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["master", "development"]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        version: [16, 18, 20]
+        os: [ubuntu-latest, windows-latest]
+
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.version }}
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build the package
+        run: npm run build
+
+      - name: Npm Pack
+        run: npm pack
+
+      - name: Publish to npm --dry-run
+        run: npm publish --dry-run

@@ -1,0 +1,34 @@
+{
+  "name": "simple-react-components-utility",
+  "version": "1.0.0",
+  "description": "Utility of simple REACT reusable components",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajaxer-org/simple-react-components-utility.git"
+  },
+  "keywords": [
+    "react",
+    "components",
+    "utility"
+  ],
+  "author": "ajaxer-org",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/ajaxer-org/simple-react-components-utility/issues"
+  },
+  "homepage": "https://github.com/ajaxer-org/simple-react-components-utility#readme",
+  "devDependencies": {
+    "@testing-library/react": "^16.0.0",
+    "@types/react": "^18.3.3",
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "@types/react": "^18.3.3",
+    "typescript": "^5.5.4"
+  }
+}
