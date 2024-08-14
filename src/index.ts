@@ -1,1 +1,3 @@
-export { default as SafeAnchor } from "./components/SafeAnchor";
+import SafeAnchor from "./components/SafeAnchor";
+
+export { SafeAnchor };
